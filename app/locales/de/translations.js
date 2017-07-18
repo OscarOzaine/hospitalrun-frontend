@@ -31,6 +31,7 @@ export default {
         columns: '',
         customForm: '',
         dischargeReportFormType: '',
+        expenseTo: '',
         formName: '',
         formType: '',
         incidentFormType: '',
@@ -161,6 +162,7 @@ export default {
         admitPatient: '',
         appointments: '',
         billing: '',
+        cashier: '',
         completeImaging: '',
         completeLab: '',
         defineUserRoles: '',
@@ -192,6 +194,7 @@ export default {
         inventory: '',
         invoices: '',
         labs: '',
+        listPaidInvoices: '',
         loadDb: '',
         manageIncidents: '',
         medication: '',
@@ -204,6 +207,17 @@ export default {
       },
       messages: { roleSaved: '' },
       titles: { roleSaved: '' }
+    },
+    textReplacements: {
+      createNew: '',
+      existingRepl: '',
+      noMatches: '',
+      pageTitle: '',
+      performExpand: '',
+      possibleExpansions: '',
+      replDesc: '',
+      replaceWith: '',
+      toReplace: ''
     },
     userRoles: '',
     users: 'Benutzer',
@@ -300,7 +314,12 @@ export default {
       paymentProfile: '',
       paymentsDeposits: '',
       pricingPanelOverrides: '',
-      pricingProfile: ''
+      pricingProfile: '',
+      setFee: ''
+    },
+    messages: {
+      flatDiscountMsg: '',
+      flatFeeMsg: ''
     }
   },
   buttons: {
@@ -328,8 +347,10 @@ export default {
     newRequestPlus: '',
     newUser: 'Neuer Benutzer',
     ok: 'Okay',
+    print: '',
     remove: '',
     returnButton: 'Zurück',
+    review: '',
     search: '',
     showAll: '',
     showFewer: '',
@@ -398,7 +419,8 @@ export default {
     titles: { addCustomForm: '' }
   },
   dashboard: {
-    setup: '',
+    needs_user_setup: '',
+    standalone_welcome: '',
     title: 'Was möchten Sie tun?'
   },
   dates: {
@@ -768,6 +790,7 @@ export default {
     country: '',
     cptcode: '',
     creditTo: '',
+    currencySymbol: '',
     date: '',
     dateCompleted: 'Abschlussdatum',
     dateOfBirth: '',
@@ -793,6 +816,7 @@ export default {
     fileLoadSuccessful: 'Datei erfolgreich geladen',
     fileName: '',
     fileToLoad: 'Datei laden',
+    from: '',
     fulfill: 'Ausführen',
     fulfillRequest: '',
     fulfillRequestNow: '',
@@ -841,6 +865,7 @@ export default {
     startTime: 'Startzeit',
     status: '',
     takenBy: '',
+    to: '',
     total: '',
     type: '',
     userCanAddNewValue: 'Benutzer kann neue Werte hinzufügen',
@@ -875,13 +900,13 @@ export default {
     sectionTitle: ''
   },
   languages: {
-    en: '',
-    fr: '',
-    es: '',
     de: '',
-    ru: '',
+    en: '',
+    es: '',
     'es-co': '',
+    fr: '',
     'pt-br': '',
+    ru: '',
     tr: '',
     ur: ''
   },
@@ -910,6 +935,7 @@ export default {
     },
     messages: {
       error: 'Benutzername oder Passwort falsch.',
+      offlineError: '',
       signIn: 'Bitte anmelden'
     }
   },
@@ -1060,7 +1086,8 @@ export default {
     about: 'Über HospitalRun',
     actions: {
       login: 'Anmelden',
-      logout: 'Abmelden'
+      logout: 'Abmelden',
+      selectLanguage: ''
     },
     administration: 'Administration',
     billing: 'Abrechnung',
@@ -1069,6 +1096,7 @@ export default {
     inventory: 'Inventar',
     labs: 'Labore',
     medication: 'Medikation',
+    messages: { logoutFailed: '' },
     patients: 'Patienten',
     scheduling: '',
     subnav: {
@@ -1079,6 +1107,7 @@ export default {
       appointmentSearch: '',
       appointmentsCalendar: '',
       appointmentsThisWeek: '',
+      cashier: '',
       completed: 'Erledigt',
       currentIncidents: '',
       customForms: '',
@@ -1090,7 +1119,6 @@ export default {
       items: 'Einheiten',
       loadDB: '',
       lookupLists: 'Nachschlagelisten',
-      missedAppointments: '',
       newIncident: '',
       newInvoice: 'Neue Rechnung',
       newPatient: 'Neuer Patient',
@@ -1105,12 +1133,14 @@ export default {
       requests: 'Anfragen',
       returnMedication: 'Medikamente zurückgeben',
       scheduleSurgery: '',
+      textReplacements: '',
       theaterSchedule: '',
       "today'sAppointments": '',
       userRoles: '',
       users: 'Benutzer',
       workflow: ''
-    }
+    },
+    titles: { logoutFailed: '' }
   },
   operationReport: {
     labels: {
@@ -1281,6 +1311,11 @@ export default {
       visit: ''
     }
   },
+  pricing: { labels: {
+    discountAmount: '',
+    discountPercentage: '',
+    setFee: ''
+  } },
   print: { invoice: {
     labels: {
       billedBy: '',

@@ -31,6 +31,7 @@ export default {
         columns: '',
         customForm: '',
         dischargeReportFormType: '',
+        expenseTo: '',
         formName: '',
         formType: '',
         incidentFormType: '',
@@ -161,6 +162,7 @@ export default {
         admitPatient: '',
         appointments: '',
         billing: '',
+        cashier: '',
         completeImaging: '',
         completeLab: '',
         defineUserRoles: '',
@@ -192,6 +194,7 @@ export default {
         inventory: '',
         invoices: '',
         labs: '',
+        listPaidInvoices: '',
         loadDb: '',
         manageIncidents: '',
         medication: '',
@@ -204,6 +207,17 @@ export default {
       },
       messages: { roleSaved: '' },
       titles: { roleSaved: '' }
+    },
+    textReplacements: {
+      createNew: '',
+      existingRepl: '',
+      noMatches: '',
+      pageTitle: '',
+      performExpand: '',
+      possibleExpansions: '',
+      replDesc: '',
+      replaceWith: '',
+      toReplace: ''
     },
     userRoles: '',
     users: '',
@@ -300,7 +314,12 @@ export default {
       paymentProfile: '',
       paymentsDeposits: '',
       pricingPanelOverrides: '',
-      pricingProfile: ''
+      pricingProfile: '',
+      setFee: ''
+    },
+    messages: {
+      flatDiscountMsg: '',
+      flatFeeMsg: ''
     }
   },
   buttons: {
@@ -328,8 +347,10 @@ export default {
     newRequestPlus: '',
     newUser: '',
     ok: 'Tamam',
+    print: '',
     remove: '',
     returnButton: 'Geri Dön',
+    review: '',
     search: '',
     showAll: '',
     showFewer: '',
@@ -398,7 +419,8 @@ export default {
     titles: { addCustomForm: '' }
   },
   dashboard: {
-    setup: '',
+    needs_user_setup: '',
+    standalone_welcome: '',
     title: 'Ne yapmak istersiniz?'
   },
   dates: {
@@ -768,6 +790,7 @@ export default {
     country: '',
     cptcode: '',
     creditTo: '',
+    currencySymbol: '',
     date: '',
     dateCompleted: 'Bitiş tarihi',
     dateOfBirth: '',
@@ -793,6 +816,7 @@ export default {
     fileLoadSuccessful: '',
     fileName: '',
     fileToLoad: '',
+    from: '',
     fulfill: 'Fulfill',
     fulfillRequest: '',
     fulfillRequestNow: '',
@@ -841,6 +865,7 @@ export default {
     startTime: '',
     status: '',
     takenBy: '',
+    to: '',
     total: '',
     type: '',
     userCanAddNewValue: '',
@@ -875,13 +900,13 @@ export default {
     sectionTitle: ''
   },
   languages: {
-    en: '',
-    fr: '',
-    es: '',
     de: '',
-    ru: '',
+    en: '',
+    es: '',
     'es-co': '',
+    fr: '',
     'pt-br': '',
+    ru: '',
     tr: '',
     ur: ''
   },
@@ -910,6 +935,7 @@ export default {
     },
     messages: {
       error: 'Kullanıcı adı veya parola hatalı.',
+      offlineError: '',
       signIn: 'GİRİŞ YAPIN'
     }
   },
@@ -1060,7 +1086,8 @@ export default {
     about: '',
     actions: {
       login: '',
-      logout: ''
+      logout: '',
+      selectLanguage: ''
     },
     administration: '',
     billing: '',
@@ -1069,6 +1096,7 @@ export default {
     inventory: '',
     labs: '',
     medication: '',
+    messages: { logoutFailed: '' },
     patients: '',
     scheduling: '',
     subnav: {
@@ -1079,6 +1107,7 @@ export default {
       appointmentSearch: '',
       appointmentsCalendar: '',
       appointmentsThisWeek: '',
+      cashier: '',
       completed: '',
       currentIncidents: '',
       customForms: '',
@@ -1090,7 +1119,6 @@ export default {
       items: '',
       loadDB: '',
       lookupLists: '',
-      missedAppointments: '',
       newIncident: '',
       newInvoice: '',
       newPatient: '',
@@ -1105,12 +1133,14 @@ export default {
       requests: '',
       returnMedication: '',
       scheduleSurgery: '',
+      textReplacements: '',
       theaterSchedule: '',
       "today'sAppointments": '',
       userRoles: '',
       users: '',
       workflow: ''
-    }
+    },
+    titles: { logoutFailed: '' }
   },
   operationReport: {
     labels: {
@@ -1281,6 +1311,11 @@ export default {
       visit: ''
     }
   },
+  pricing: { labels: {
+    discountAmount: '',
+    discountPercentage: '',
+    setFee: ''
+  } },
   print: { invoice: {
     labels: {
       billedBy: '',

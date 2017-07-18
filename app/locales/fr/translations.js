@@ -41,7 +41,7 @@ export default {
         newForm: 'Nouveau formulaire',
         opdReportFormType: 'Rapport de Patient en Consultation Externe',
         operativePlanFormType: 'Plan Opérationnel et Rapport',
-        otherOptionLabel: 'Label d\'autre option',
+        otherOptionLabel: "Label d'autre option",
         patientFormType: 'Patient',
         property: 'Propriété',
         radio: 'Bouton Radio',
@@ -65,15 +65,15 @@ export default {
       }
     },
     header: {
-      editTitle: 'Options d\'Entête',
-      facilityName: 'Nom de l\'établissement',
+      editTitle: "Options d'Entête",
+      facilityName: "Nom de l'établissement",
       headerLabel: 'Entête',
       headerLine1: "Première Ligne d'Entête",
       headerLine2: "Deuxième Ligne d'Entête",
       headerLine3: "Troisième Ligne d'Entête",
       logoURL: 'URL du Logo',
       messages: { headerSaved: 'Entête enregistrée' },
-      newTitle: 'Options d\'Entête',
+      newTitle: "Options d'Entête",
       titles: { optionsSaved: 'Options enregistrées' }
     },
     loadDb: 'Importer une BD',
@@ -237,7 +237,7 @@ export default {
       followupPrepaymentLabel: 'Suivi du paiement préalable requis',
       messages: { optionsSaved: 'Les options du flux de travail ont été enregistrées' },
       newTitle: 'Options du flux de travail',
-      outpatientImagingLabel: 'Paiement préalable de l\'imagerie par le patient en consulation externe requis',
+      outpatientImagingLabel: "Paiement préalable de l'imagerie par le patient en consulation externe requis",
       outpatientLabLabel: 'Paiement préalable du test de laboratoire par le patient en consultation externe requis',
       outpatientMedicationLabel: 'Paiement préalable des médicaments par le patient en consultation externe requis',
       titles: { optionsSaved: 'Options sauvegardées' },
@@ -318,7 +318,7 @@ export default {
       setFee: 'Définir les frais'
     },
     messages: {
-      flatDiscountMsg: 'Il existe une remise fixe appliquée à la responsabilité financière du patient d\'un montant de {{currency}}{{discountAmount}}.',
+      flatDiscountMsg: "Il existe une remise fixe appliquée à la responsabilité financière du patient d'un montant de {{currency}}{{discountAmount}}.",
       flatFeeMsg: "Il existe des frais forfaitaires pour le patient d'un montant de {{setFee}}{{currency}}."
     }
   },
@@ -347,8 +347,10 @@ export default {
     newRequestPlus: '+ nouvelle demande',
     newUser: 'Nouvel utilisateur',
     ok: 'Ok',
+    print: '',
     remove: 'Retirer',
     returnButton: 'Retourner',
+    review: '',
     search: 'Rechercher',
     showAll: 'Tout afficher',
     showFewer: 'Afficher moins',
@@ -898,13 +900,13 @@ export default {
     sectionTitle: 'Labos'
   },
   languages: {
-    en: 'Anglais',
-    fr: 'Français',
-    es: 'Espanol',
     de: '',
-    ru: '',
+    en: 'Anglais',
+    es: 'Espanol',
     'es-co': '',
+    fr: 'Français',
     'pt-br': '',
+    ru: '',
     tr: '',
     ur: ''
   },
@@ -985,8 +987,8 @@ export default {
     noNotesAvailable: 'Aucune note clinique supplémentaire disponible pour cette visite.',
     noUsersFound: 'Aucun utilisateur retrouvé.',
     onBehalfOf: 'de la part de',
-    reportError: 'Une erreur est apparue pendant la génération du rapport demandé. Merci de prévenir votre administrateur systême de l\'erreur rencontrée.',
-    requiredFieldsCorrectErrors: 'Veuillez remplir les champs obligatoires (annotés d\'un *) et corriger les erreurs avant de sauvegarder.',
+    reportError: "Une erreur est apparue pendant la génération du rapport demandé. Merci de prévenir votre administrateur systême de l'erreur rencontrée.",
+    requiredFieldsCorrectErrors: "Veuillez remplir les champs obligatoires (annotés d'un *) et corriger les erreurs avant de sauvegarder.",
     saveActionException: 'Une erreur est apparue pendant la tentative de sauvegarde: {{message}}',
     sorry: 'Désolé, quelque chose a mal tourné ...',
     userHasBeenSaved: "L'utilisateur a été enregistré.",
